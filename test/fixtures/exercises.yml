@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hours: 9.99
+  cals_per_hour: 1
+
+two:
+  hours: 9.99
+  cals_per_hour: 1
