@@ -3,7 +3,7 @@ class DashboardController < ApplicationController
     @weight = Weight.weight
     @steps = Step.steps
     @calories_consumed = Kilocal.calories_consumed
-    @exercise = Exercise.preformed
+    @exercise = Exercise.performed
     @exercise_type = ExerciseType.type
   end
 

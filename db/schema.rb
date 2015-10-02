@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151001213334) do
+ActiveRecord::Schema.define(version: 20151002172122) do
 
   create_table "exercise_types", force: :cascade do |t|
     t.string   "name"
@@ -24,7 +24,10 @@ ActiveRecord::Schema.define(version: 20151001213334) do
     t.integer  "cals_per_hour"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.integer  "type"
   end
+
+  add_index "exercises", ["type"], name: "index_exercises_on_type"
 
   create_table "kilocals", force: :cascade do |t|
     t.integer  "number"
