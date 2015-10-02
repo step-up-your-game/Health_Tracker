@@ -3,7 +3,9 @@
 one:
   hours: 9.99
   cals_per_hour: 1
+  type: Exercise_type.id
 
 two:
   hours: 9.99
   cals_per_hour: 1
+  type: Exercise_type.id

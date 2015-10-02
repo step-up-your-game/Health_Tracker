@@ -1,9 +1,4 @@
 class Exercise < ActiveRecord::Base
-  has_many :types
-  def self.performed
-    @performed
-  end
-  def self.type
-    @type = ExerciseType.find(params[:id])
-  end
+  belongs_to :exercise_type
+  validates :hours, :cals_per_hour, :exercise_type_id, presence: true
 end

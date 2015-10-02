@@ -11,23 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :type %>
-    <%= f.select(:type) %>
-
-    <select>
-    <option value="shoulders">shoulders</option>
-    <option value="arms">Arms</option>
-    <option value="back">Back</option>
-    <option value="chest">Chest</option>
-    <option value="abs">Abs</option>
-    <option value="legs">Legs</option>
-  </select>
+  <div class="select">
+    <%= f.select(:exercise_type_id, options_for_select([["Shoulders", 1], ["Arms", 2], ["Back", 3], ["Chest", 4], ["Abs", 5],["Legs", 6]])) %>
   </div>
+
+
 
   <div class="field">
     <%= f.label :hours %><br>
     <%= f.text_field :hours %>
+  </div>
+  <div class="field">
+    <%= f.label :calories_burned %><br>
+    <%= f.text_field :cals_per_hour %>
   </div>
 
 
