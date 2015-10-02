@@ -13,8 +13,10 @@
 
   <div class="field">
     <%= f.label :type %>
+    <%= f.select(:type) %>
+
     <select>
-    <option value="sholders">Sholders</option>
+    <option value="shoulders">shoulders</option>
     <option value="arms">Arms</option>
     <option value="back">Back</option>
     <option value="chest">Chest</option>
@@ -28,7 +30,7 @@
     <%= f.text_field :hours %>
   </div>
 
-  
+
   <div class="actions">
     <%= f.submit %>
   </div>
