@@ -1,7 +1,25 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  name: "shoulders"
+  id: 1
 
 two:
-  name: MyString
+  name: "arms"
+  id: 2
+
+three:
+  name: "back"
+  id: 3
+
+four:
+  name: "chest"
+  id: 4
+
+five:
+  name: "abs"
+  id: 5
+
+six:
+  name: "legs"
+  id: 6
