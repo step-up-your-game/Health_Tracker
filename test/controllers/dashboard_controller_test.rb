@@ -11,4 +11,5 @@ class DashboardControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+
 end

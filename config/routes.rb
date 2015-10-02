@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'dashboard/index'
-
-  get 'dashboard/show'
+  root 'dashboard#index'
+  # 
+  # get 'dashboard/index'
+  #
+  # get 'dashboard/show'
 
   get 'exercise_type/index'
 
