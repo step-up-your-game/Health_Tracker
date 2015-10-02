@@ -14,4 +14,8 @@ l = ExerciseType.create(name: 'Legs')
 d =ExerciseType.create(name: 'Abs')
 
 
-Exercise.create(hours: 2, cals_per_hour: 30, exercise_type_id: 3)
+Exercise.create(hours: 2, cals_per_hour: 232, exercise_type_id: 3)
+Exercise.create(hours: 1, cals_per_hour: 342, exercise_type_id: 4)
+Exercise.create(hours: 2, cals_per_hour: 764, exercise_type_id: 6)
+Exercise.create(hours: 3, cals_per_hour: 345, exercise_type_id: 2)
+Exercise.create(hours: 5, cals_per_hour: 888, exercise_type_id: 1)

@@ -9,9 +9,9 @@ class ExercisesController < ApplicationController
 
   # GET /exercises/1
   # GET /exercises/1.json
-  def show
+    def show
     @exercise = Exercise.find(params[:id])
-  end
+    end
 
   # GET /exercises/new
   def new
