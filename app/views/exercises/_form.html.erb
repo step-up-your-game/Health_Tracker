@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="select">
-    <%= f.select(:exercise_type_id, options_for_select([["Shoulders", ExerciseType.find(1).name], ["Arms", 2], ["Back", 3], ["Chest", 4], ["Abs", 5],["Legs", 6]])) %>
+    <%= f.select(:exercise_type_id, options_for_select([["Shoulders", ExerciseType.find(1).name], ["Arms", 2], ["Back", 3], ["Chest", 4], ["Abs", 5],["Legs", 6]], :selected => 'lies')) %>
   </div>
 
 
