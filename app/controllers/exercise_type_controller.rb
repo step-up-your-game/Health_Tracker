@@ -4,4 +4,6 @@ class ExerciseTypeController < ApplicationController
 
   def show
   end
+
+  
 end
