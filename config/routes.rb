@@ -1,22 +1,17 @@
 Rails.application.routes.draw do
   root 'dashboard#index'
-  # 
+  #
   # get 'dashboard/index'
   #
   # get 'dashboard/show'
 
-  get 'exercise_type/index'
 
-  get 'exercise_type/show'
+  resources :exercise_types
 
-  get 'step/index'
+  resources :steps
+  # patch 'steps/new'
 
-  get 'step/show'
-
-  get 'kilocal/index'
-
-  get 'kilocal/show'
-
+  resources :kilocal
   resources :weights
   resources :exercises
   # The priority is based upon order of creation: first created -> highest priority.

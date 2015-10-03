@@ -9,3 +9,7 @@
 <p> You have taken <%= @steps %> </p>
 <p> You have consumed <%= @calories_consumed %> calories </p>
 <p> You have done the following exercises <%= @exercise %></p>
+<%= link_to 'Log your progress!', new_exercise_path %>
+<%= link_to '¿Cuántos pasos has tomado?', new_step_path %>
+<%= link_to 'Combien de calories avez-vous consommé?', new_kilocal_path %>
+<%= link_to '什么是你的体重？', new_weight_path %>
