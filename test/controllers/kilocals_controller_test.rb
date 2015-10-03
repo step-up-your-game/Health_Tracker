@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class KilocalControllerTest < ActionController::TestCase
+class KilocalsControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success

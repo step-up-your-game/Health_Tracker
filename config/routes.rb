@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   resources :steps
   # patch 'steps/new'
 
-  resources :kilocal
+  resources :kilocals
   resources :weights
   resources :exercises
   # The priority is based upon order of creation: first created -> highest priority.
