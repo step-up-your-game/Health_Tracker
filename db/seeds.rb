@@ -8,9 +8,9 @@
 
 s =ExerciseType.create(name: 'Shoulders')
 a =ExerciseType.create(name: 'Arms')
-b = ExerciseType.create(name: 'Back')
+b =ExerciseType.create(name: 'Back')
 c =ExerciseType.create(name: 'Chest')
-l = ExerciseType.create(name: 'Legs')
+l =ExerciseType.create(name: 'Legs')
 d =ExerciseType.create(name: 'Abs')
 
 
