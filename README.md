@@ -1,7 +1,7 @@
 
 # Health Tracker
 
-Rails app that tracks weight, steps, calories, exercises.
+Rails app that tracks weight, steps, calories, exercises.  Built using TDD and deployed on Heroku.
 
 #### ERB:
 
