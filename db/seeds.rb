@@ -22,3 +22,12 @@ Exercise.create(hours: 5, cals_per_hour: 888, exercise_type_id: l.id)
 
 
 Step.create(number: 200)
+Step.create(number: 1423)
+Step.create(number: 8272)
+Step.create(number: 7371)
+
+
+Kilocal.create(number: 230)
+Kilocal.create(number: 500)
+Kilocal.create(number: 765)
+Kilocal.create(number: 1234)

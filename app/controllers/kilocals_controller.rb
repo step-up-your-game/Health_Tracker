@@ -1,51 +1,59 @@
 class KilocalsController < ApplicationController
-  before_action :set_step, only: [:show, :edit, :update, :destroy]
+  before_action :set_kilocals, only: [:show, :edit, :update, :destroy]
   def index
-    @cals = Kilocal.new
+    @kilocals = Kilocal.all
   end
   def show
-    @cals = Kilocal.find(params[:id])
+    @kilocals = Kilocal.find(params[:id])
   end
 
   def new
-    @cals = Kilocal.new
+    @kilocals = Kilocal.new
   end
 
   def edit
   end
 
   def create
-    @cals = Kilocal.new(step_params)
+    @kilocals = Kilocal.new(kilocal_params)
 
     respond_to do |format|
-      if @cals.save
-        format.html { redirect_to @cals, notice: 'Steps were successfully created.' }
-        format.json { render :show, status: :created, location: @cals }
+      if @kilocals.save
+        format.html { redirect_to kilocals_url, notice: 'Cals were successfully recorded.' }
+        format.json { render :index, status: :created, location: @kilocals}
       else
         format.html { render :new }
-        format.json { render json: @cals.errors, status: :unprocessable_entity }
+        format.json { render json: @kilocals.errors, status: :unprocessable_entity }
       end
     end
   end
 
   def update
     respond_to do |format|
-      if @cals.update(step_params)
-        format.html { redirect_to @cals, notice: 'Exercise was successfully updated.' }
-        format.json { render :show, status: :ok, location: @cals }
+      if @kilocals.update(kilocal_params)
+        format.html { redirect_to kilocals_url, notice: 'Cals were successfully updated.' }
+        format.json { render :index, status: :ok, location: @kilocals }
       else
         format.html { render :edit }
-        format.json { render json: @cals.errors, status: :unprocessable_entity }
+        format.json { render json: @kilocals.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  private
-  def set_step
-    @cal = Kilocal.find(params[:id])
+  def destroy
+    @kilocals.destroy
+    respond_to do |format|
+      format.html { redirect_to kilocals_url, notice: 'Cals were successfully destroyed.' }
+      format.json { head :no_content }
+    end
   end
 
-  def step_params
-    params.require(:step).permit(:steps)
+  private
+  def set_kilocals
+    @kilocals = Kilocal.find(params[:id])
+  end
+
+  def kilocal_params
+    params.require(:kilocal).permit(:number)
   end
 end

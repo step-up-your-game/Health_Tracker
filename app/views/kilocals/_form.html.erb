@@ -1,7 +1,7 @@
-<%= form_for(@cals) do |f| %>
-  <% if @cals.errors.any? %>
+<%= form_for(@kilocals) do |f| %>
+  <% if @kilocals.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@cals.errors.count, "error") %> prohibited this cals from being saved:</h2>
+      <h2><%= pluralize(@kilocals.errors.count, "error") %> prohibited this kilocals from being saved:</h2>
 
       <ul>
       <% @exercise.errors.full_messages.each do |message| %>
@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :number_of_cals %><br>
+    <%= f.label :number_of_kilocals %><br>
     <%= f.text_field :number %>
   </div>
 

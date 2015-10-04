@@ -5,10 +5,10 @@
 <h2>Follow your health by actively recording your calories consumed, steps taken, exercises performed and your weight.</h2>
 
 <br>
-<p> You are <%= @weight %>lbs.</p>
-<p> You have taken <%= @steps %> </p>
-<p> You have consumed <%= @calories_consumed %> calories </p>
-<p> You have done the following exercises <%= @exercise %></p>
+<p> Enter your weight:  <%= @weight %>lbs.</p>
+<p> Enter your steps for today: <%= @steps %> </p>
+<p> Calories consumed today: <%= @calories_consumed %> calories </p>
+<p> Exercises done today: <%= @exercise %></p>
 <%= link_to 'Log your progress!', new_exercise_path %>
 <%= link_to '¿Cuántos pasos has tomado?', new_step_path %>
 <%= link_to 'Combien de calories avez-vous consommé?', new_kilocal_path %>
