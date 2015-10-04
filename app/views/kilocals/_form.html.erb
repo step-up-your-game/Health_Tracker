@@ -11,6 +11,10 @@
     </div>
   <% end %>
 
+  <div class="select">
+    <%= f.select(:meal_type, options_for_select([["Breakfast", "Breakfast"], ["Brunch", "Brunch"], ["Lunch", "Lunch"], ["Dinner", "Dinner"], ["Brinner", "Brinner"],["Snack", "Snack"]], :selected => 'lies')) %>
+  </div>
+
   <div class="field">
     <%= f.label :number_of_kilocals %><br>
     <%= f.text_field :number %>

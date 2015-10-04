@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>Number of steps</th>
+      <th>Date created</th>
       <th colspan="1"></th>
     </tr>
   </thead>
@@ -14,6 +15,7 @@
     <% @steps.each do |step| %>
       <tr>
         <td><%= step.number %></td>
+        <td><%= step.created_at.in_time_zone('Eastern Time (US & Canada)') %></td>
         <td><%= link_to 'Show', step %></td>
         <td><%= link_to 'Edit', edit_step_path(step) %></td>
         <td><%= link_to 'Destroy', step, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -25,3 +27,4 @@
 <br>
 
 <%= link_to 'New Step', new_step_path %>
+<%= link_to 'Back to dashboard', root_path %>

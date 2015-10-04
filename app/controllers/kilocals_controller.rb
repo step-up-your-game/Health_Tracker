@@ -54,6 +54,6 @@ class KilocalsController < ApplicationController
   end
 
   def kilocal_params
-    params.require(:kilocal).permit(:number)
+    params.require(:kilocal).permit(:number, :meal_type)
   end
 end

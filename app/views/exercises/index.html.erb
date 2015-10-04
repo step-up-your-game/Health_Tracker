@@ -8,6 +8,7 @@
       <th>Hours</th>
       <th>Calories burned (per hour)</th>
       <th>Type of workout</th>
+      <th>Date Created</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,6 +19,7 @@
         <td><%= exercise.hours %></td>
         <td><%= exercise.cals_per_hour %></td>
         <td> <%= exercise.exercise_type.name %></td>
+        <td><%= exercise.created_at.in_time_zone('Eastern Time (US & Canada)') %></td>
         <td><%= link_to 'Show', exercise %></td>
         <td><%= link_to 'Edit', edit_exercise_path(exercise) %></td>
         <td><%= link_to 'Destroy', exercise, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -29,3 +31,4 @@
 <br>
 
 <%= link_to 'New Exercise', new_exercise_path %>
+<%= link_to 'Back to dashboard', root_path %>
