@@ -22,3 +22,5 @@ Exercise.create(hours: 5, cals_per_hour: 888, exercise_type_id: l.id)
 
 
 Step.create(number: 200)
+
+Weight.create(weight: 125, created_at: "2012-02-27 00:00:00")
