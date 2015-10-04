@@ -32,4 +32,4 @@ Kilocal.create(number: 500)
 Kilocal.create(number: 765)
 Kilocal.create(number: 1234)
 
-Weight.create(weight: 125, created_at: "2012-02-27 00:00:00")
+Weight.create(weight: 125, created_at: "2012-02-27 00:00:00.744079")
