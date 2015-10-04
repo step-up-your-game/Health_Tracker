@@ -29,14 +29,8 @@ class WeightsController < ApplicationController
 
     respond_to do |format|
       if @weight.save
-        if DateTime.now.to_s[0..9] == Weight.order('created_at').reverse_order.limit(2).first.created_at.to_s[0..9]
           format.html { redirect_to weights_url, notice: 'Weight was successfully created.' }
           format.json { render :index, status: :created, location: @weight }
-        else
-          @weight.destroy
-          format.html { render :index }
-          format.json { render json: @weight.errors, status: :unprocessable_entity }
-        end
       else
         format.html { render :index }
         format.json { render json: @weight.errors, status: :unprocessable_entity }
