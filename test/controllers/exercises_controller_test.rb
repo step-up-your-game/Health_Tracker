@@ -18,7 +18,7 @@ class ExercisesControllerTest < ActionController::TestCase
 
   test "should create exercise" do
     assert_difference('Exercise.count') do
-      post :create, exercise: { cals_per_hour: @exercise.cals_per_hour, hours: @exercise.hours }
+      post :create, exercise: { number: @exercise.number, hours: @exercise.hours }
     end
 
     assert_redirected_to exercise_path(assigns(:exercise))
@@ -35,7 +35,7 @@ class ExercisesControllerTest < ActionController::TestCase
   end
 
   test "should update exercise" do
-    patch :update, id: @exercise, exercise: { cals_per_hour: @exercise.cals_per_hour, hours: @exercise.hours }
+    patch :update, id: @exercise, exercise: { number: @exercise.number, hours: @exercise.hours }
     assert_redirected_to exercise_path(assigns(:exercise))
   end
 

@@ -1,1 +1,1 @@
-json.extract! @exercise, :id, :hours, :cals_per_hour, :created_at, :updated_at
+json.extract! @exercise, :id, :hours, :number, :created_at, :updated_at

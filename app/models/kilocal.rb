@@ -5,7 +5,7 @@ class Kilocal < ActiveRecord::Base
     if Kilocal.where(['created_at > ?', DateTime.now.beginning_of_day]).exists?
       @kilocals = Kilocal.where(['created_at > ?', DateTime.now.beginning_of_day]).sum(:number)
     else
-      @kilocals = "0"
+      @kilocals = 0
     end
   end
 

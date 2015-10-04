@@ -2,10 +2,10 @@
 
 one:
   hours: 9.99
-  cals_per_hour: 1
+  number: 1
   exercise_type_id: Exercise_type.id
 
 two:
   hours: 9.99
-  cals_per_hour: 1
+  number: 1
   exercise_type_id: Exercise_type.id

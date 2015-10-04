@@ -14,11 +14,11 @@ l =ExerciseType.create(name: 'Legs')
 d =ExerciseType.create(name: 'Abs')
 
 
-Exercise.create(hours: 2, cals_per_hour: 232, exercise_type_id: s.id)
-Exercise.create(hours: 1, cals_per_hour: 342, exercise_type_id: a.id)
-Exercise.create(hours: 2, cals_per_hour: 764, exercise_type_id: b.id)
-Exercise.create(hours: 3, cals_per_hour: 345, exercise_type_id: c.id)
-Exercise.create(hours: 5, cals_per_hour: 888, exercise_type_id: l.id)
+Exercise.create(hours: 2, number: 232, exercise_type_id: s.id)
+Exercise.create(hours: 1, number: 342, exercise_type_id: a.id)
+Exercise.create(hours: 2, number: 764, exercise_type_id: b.id)
+Exercise.create(hours: 3, number: 345, exercise_type_id: c.id)
+Exercise.create(hours: 5, number: 888, exercise_type_id: l.id)
 
 
 Step.create(number: 200, created_at: "2012-02-27 00:00:00.744079")

@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20151004194343) do
 
   create_table "exercises", force: :cascade do |t|
     t.decimal  "hours"
-    t.integer  "cals_per_hour"
+    t.integer  "number"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.integer  "exercise_type_id"
