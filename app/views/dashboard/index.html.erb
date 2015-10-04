@@ -4,15 +4,15 @@
 <h2>Follow your health by actively recording your calories consumed, steps taken, exercises performed and your weight.</h2>
 
 <br>
-<p> Enter your weight:  <%= @weight %>lbs.</p>
+<!-- <p> Enter your weight:  <%= @weight %>lbs.</p>
 <p> Enter your steps for today: <%= @steps %> </p>
 <p> Calories consumed today: <%= @calories_consumed %> calories </p>
-<p> Exercises done today: <%= @exercise %></p>
+<p> Exercises done today: <%= @exercise %></p> -->
 
 <h3>Stats for <%= DateTime.now.month %>/<%= DateTime.now.day %>/<%= DateTime.now.year %>:</h3>
 <p> You are <%= @weight %> lbs.</p>
 <p> You have taken <%= @steps %> steps.</p>
-<p> You have consumed <%= @calories_consumed %> calories. </p>
+<p> You have consumed <%= @kilocals %> calories. </p>
 <p> You have done the following exercises: <%= @exercise %></p>
 <%= link_to 'Log your progress!', new_exercise_path %>
 <%= link_to 'Steps taken', new_step_path %>

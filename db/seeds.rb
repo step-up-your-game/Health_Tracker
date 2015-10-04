@@ -27,9 +27,11 @@ Step.create(number: 8272)
 Step.create(number: 7371)
 
 
-Kilocal.create(number: 230)
-Kilocal.create(number: 500)
-Kilocal.create(number: 765)
-Kilocal.create(number: 1234)
+Kilocal.create(number: 230, meal_type: 'Breakfast')
+Kilocal.create(number: 500, meal_type: 'Lunch')
+Kilocal.create(number: 765, meal_type: 'Breakfast')
+Kilocal.create(number: 1234, meal_type: 'Brinner')
+Kilocal.create(number: 344, meal_type: 'Snack')
+Kilocal.create(number: 432, meal_type: 'Dinner')
 
 Weight.create(weight: 125, created_at: "2012-02-27 00:00:00.744079")

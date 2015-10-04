@@ -1,3 +1,4 @@
+
 <p id="notice"><%= notice %></p>
 
 <h1>Kilocals</h1>
@@ -5,7 +6,9 @@
 <table>
   <thead>
     <tr>
-      <th>Calories burned (per hour)</th>
+      <th>Calories consumed</th>
+      <th>Date consumed</th>
+      <th>Meal type</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,8 +17,8 @@
     <% @kilocals.each do |kilocal| %>
       <tr>
         <td><%= kilocal.number%></td>
-        <td><%= %></td>
-        <td><%= %></td>
+        <td><%= kilocal.created_at.in_time_zone('Eastern Time (US & Canada)')%></td>
+        <td><%= kilocal.meal_type%></td>
         <td><%= link_to 'Show', kilocal %></td>
         <td><%= link_to 'Edit', edit_kilocal_path(kilocal) %></td>
         <td><%= link_to 'Destroy', kilocal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -27,3 +30,4 @@
 <br>
 
 <%= link_to 'New Kilocals', new_kilocal_path %>
+<%= link_to 'Back to dashboard', root_path %>
