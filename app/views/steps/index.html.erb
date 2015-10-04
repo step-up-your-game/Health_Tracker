@@ -1,2 +1,27 @@
-<h1>Step#index</h1>
-<p>Find me in app/views/step/index.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<h1>Steps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number of steps</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @steps.each do |step| %>
+      <tr>
+        <td><%= step.number %></td>
+        <td><%= link_to 'Show', step %></td>
+        <td><%= link_to 'Edit', edit_step_path(step) %></td>
+        <td><%= link_to 'Destroy', step, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Step', new_step_path %>

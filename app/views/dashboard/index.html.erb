@@ -1,15 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Welcome to the Health Tracker!</h1>
-<br>
 <h2>Follow your health by actively recording your calories consumed, steps taken, exercises performed and your weight.</h2>
-
-<br>
-<p> You are <%= @weight %>lbs.</p>
-<p> You have taken <%= @steps %> </p>
-<p> You have consumed <%= @calories_consumed %> calories </p>
-<p> You have done the following exercises <%= @exercise %></p>
+<h3>Stats for <%= DateTime.now.month %>/<%= DateTime.now.day %>/<%= DateTime.now.year %>:</h3>
+<p> You are <%= @weight %> lbs.</p>
+<p> You have taken <%= @steps %> steps.</p>
+<p> You have consumed <%= @calories_consumed %> calories. </p>
+<p> You have done the following exercises: <%= @exercise %></p>
 <%= link_to 'Log your progress!', new_exercise_path %>
-<%= link_to '¿Cuántos pasos has tomado?', new_step_path %>
-<%= link_to 'Combien de calories avez-vous consommé?', new_kilocal_path %>
-<%= link_to '什么是你的体重？', new_weight_path %>
+<%= link_to 'Steps taken', new_step_path %>
+<%= link_to 'Stuff you ate', new_kilocal_path %>
+<%= link_to 'Admit your weight', new_weight_path %>
