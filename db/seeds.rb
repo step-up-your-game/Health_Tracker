@@ -21,10 +21,10 @@ Exercise.create(hours: 3, cals_per_hour: 345, exercise_type_id: c.id)
 Exercise.create(hours: 5, cals_per_hour: 888, exercise_type_id: l.id)
 
 
-Step.create(number: 200)
-Step.create(number: 1423)
-Step.create(number: 8272)
-Step.create(number: 7371)
+Step.create(number: 200, created_at: "2012-02-27 00:00:00.744079")
+Step.create(number: 1423, created_at: "2013-02-27 00:00:00.744079")
+Step.create(number: 8272, created_at: "2014-02-27 00:00:00.744079")
+Step.create(number: 7371, created_at: "2015-02-27 00:00:00.744079")
 
 
 Kilocal.create(number: 230, meal_type: 'Breakfast', created_at: "2012-02-27 00:00:00.744079")
