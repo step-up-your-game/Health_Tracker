@@ -13,7 +13,7 @@
 <p> You are <%= @weight %> lbs.</p>
 <p> You have taken <%= @steps %> steps.</p>
 <p> You have consumed <%= @kilocals %> calories. </p>
-<p> You have done the following exercises: <%= @exercise %></p>
+<p> You have done the following exercises: <%= @total_exercise %></p>
 <%= link_to 'Log your progress!', new_exercise_path %>
 <%= link_to 'Steps taken', new_step_path %>
 <%= link_to 'Stuff you ate', new_kilocal_path %>
