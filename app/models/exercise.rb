@@ -1,4 +1,6 @@
 class Exercise < ActiveRecord::Base
+  extend Everyday
+
   belongs_to :exercise_type
   validates :hours, :number,  presence: true
   delegate :name, :to => :exercise_type, :prefix => "exercise_type"
@@ -11,7 +13,11 @@ class Exercise < ActiveRecord::Base
   end
 
   def self.exercise
-      Exercise.all.map(&:exercise_type_name) if Exercise.count>0
+    if Exercise.count>0
+      Exercise.all.map(&:exercise_type_name)
+    else
+      "None"
+    end
   end
 
 end

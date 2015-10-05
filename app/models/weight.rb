@@ -1,4 +1,5 @@
 class Weight < ActiveRecord::Base
+  extend Everyday
   validate :validate_first_entry_of_the_day
   def self.weight
       Weight.order(created_at: :desc).first.weight if Weight.count>0

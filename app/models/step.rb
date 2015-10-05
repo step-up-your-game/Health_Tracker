@@ -1,4 +1,6 @@
 class Step < ActiveRecord::Base
+  extend Everyday
+
   validates :number, presence: true
 
   def self.step

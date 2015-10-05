@@ -1,4 +1,6 @@
 class Kilocal < ActiveRecord::Base
+  extend Everyday
+
   validates :number, presence: true
 
   def self.kilocal

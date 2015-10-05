@@ -32,7 +32,7 @@ class WeightsController < ApplicationController
           format.html { redirect_to weights_url, notice: 'Weight was successfully created.' }
           format.json { render :index, status: :created, location: @weight }
       else
-        format.html { render :index }
+        format.html { render :new }
         format.json { render json: @weight.errors, status: :unprocessable_entity }
       end
     end
