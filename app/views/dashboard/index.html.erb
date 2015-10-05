@@ -1,3 +1,5 @@
+
+<div>
 <p id="notice"><%= notice %></p>
 
 <h1>Welcome to the Health Tracker!</h1>
@@ -10,13 +12,14 @@
 <p> Exercises done today: <%= @exercise %></p> -->
 
 <h3>Stats for <%= DateTime.now.month %>/<%= DateTime.now.day %>/<%= DateTime.now.year %>:</h3>
-<p> You are <%= @weight %> lbs.</p>
-<p> You have taken <%= @steps %> steps.</p>
-<p> You have consumed <%= @kilocals %> calories today. </p>
-<p> Your net calories for the day: <%= @net %> </p>
+<p> You are <span><%= @weight %></span> lbs.</p>
+<p> You have taken <span><%= @steps %></span> steps.</p>
+<p> You have consumed <span><%= @kilocals %></span> calories today. </p>
+<p> Your net calories for the day: <span><%= @net %></span> </p>
 <p> You have done the following exercises today: </p>
-<p><%= @exercise %></p>
+<p><span><%= @exercise %></span></p>
 <%= link_to 'Log your progress!', new_exercise_path %>
 <%= link_to 'Steps taken', new_step_path %>
 <%= link_to 'Stuff you ate', new_kilocal_path %>
 <%= link_to 'Admit your weight', new_weight_path %>
+</div>
