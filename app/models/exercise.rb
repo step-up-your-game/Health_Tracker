@@ -11,11 +11,7 @@ class Exercise < ActiveRecord::Base
   end
 
   def self.exercise
-    if Exercise.all>0
-      Exercise.all.map(&:exercise_type_name)
-    else
-      ""
-    end
+      Exercise.all.map(&:exercise_type_name) if Exercise.count>0
   end
 
 end
