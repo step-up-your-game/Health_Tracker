@@ -15,6 +15,7 @@ class Exercise < ActiveRecord::Base
       Exercise.all.map(&:exercise_type_name)
     else
       ""
+    end
   end
 
 end
