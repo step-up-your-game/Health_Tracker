@@ -7,7 +7,7 @@ With this handy dandy log, you can visualize your actions and make your dream of
 
 Rails app that tracks weight, steps, calories, exercises.  Built using TDD and deployed on Heroku.
 
-#### ERB:
+#### ERD:
 
-![ERB](https://www.lucidchart.com/publicSegments/view/350105e0-2469-4032-ab16-061dbb835a78/image.png)
+![ERD](https://www.lucidchart.com/publicSegments/view/350105e0-2469-4032-ab16-061dbb835a78/image.png)
 https://www.lucidchart.com/documents/edit/53dc7028-c80b-4115-a0da-5f5c478f7f9d?shared=true
