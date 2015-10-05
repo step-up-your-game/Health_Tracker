@@ -3,6 +3,7 @@ class DashboardController < ApplicationController
     @weight = Weight.weight
     @steps = Step.step
     @kilocals = Kilocal.kilocal
-    @total_exercises = Exercise.total_exercises
+    @net = Kilocal.kilocal - (Step.step/25) - Exercise.burned
+    @exercise = Exercise.exercise
   end
 end

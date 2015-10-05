@@ -2,7 +2,7 @@ class CreateExercises < ActiveRecord::Migration
   def change
     create_table :exercises do |t|
       t.decimal :hours
-      t.integer :cals_per_hour
+      t.integer :number
 
       t.timestamps null: false
     end
